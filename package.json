@@ -2,22 +2,17 @@
 	"name": "@stefanwin/common",
 	"version": "0.1.1",
 	"description": "",
-	"type": "module",
 	"keywords": [
 		"typescript"
 	],
 	"license": "MIT",
 	"author": {
-		"url": "https://swinte.dev",
+		"name": "Stefan Wintergerst",
 		"email": "wintergerst.stefan@googlemail.com",
-		"name": "Stefan Wintergerst"
+		"url": "https://swinte.dev"
 	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
-	"main": "dist/index.umd.js",
-	"module": "dist/index.es.js",
-	"types": "dist/types/index.d.ts",
+	"sideEffects": false,
+	"type": "module",
 	"exports": {
 		".": {
 			"types": "./dist/types/index.d.ts",
@@ -25,16 +20,21 @@
 			"require": "./dist/index.umd.js"
 		}
 	},
-	"sideEffects": false,
+	"main": "dist/index.umd.js",
+	"module": "dist/index.es.js",
+	"types": "dist/types/index.d.ts",
 	"scripts": {
 		"build": "vite build && tsc --emitDeclarationOnly",
+		"format": "biome format --write",
+		"lint": "biome check --write",
+		"prepare": "husky",
 		"test": "vitest",
 		"test:ci": "vitest run",
 		"test:lint": "biome ci",
-		"test:types": "tsc --noEmit",
-		"lint": "biome check --write",
-		"format": "biome format --write",
-		"prepare": "husky"
+		"test:types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"zod": "^4.1.5"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.2",
@@ -46,5 +46,8 @@
 		"vite": "^7.1.4",
 		"vitest": "^3.2.4"
 	},
-	"packageManager": "pnpm@10.14.0"
+	"packageManager": "pnpm@10.14.0",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
