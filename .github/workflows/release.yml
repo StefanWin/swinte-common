@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 22
           registry-url: "https://npm.pkg.github.com"
-          scope: "@<your-github-username>"
+          scope: "@stefanwin"
 
       - name: install pnpm
         uses: pnpm/action-setup@v4
@@ -39,7 +39,7 @@ jobs:
 
       - name: release-please
         id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           config-file: .release-please-config.json
           manifest-file: .release-please-manifest.json
