@@ -20,3 +20,6 @@ jobs:
           version: 10.14.0
       - run: pnpm install --frozen-lockfile
       - run: pnpm dlx commitlint --from=origin/main --to=HEAD
+      - run: pnpm test:lint
+      - run: pnpm test:types
+      - run: pnpm test:ci
