@@ -31,8 +31,10 @@
 		"test": "vitest",
 		"test:ci": "vitest run",
 		"test:lint": "biome ci",
+		"test:types": "tsc --noEmit",
 		"lint": "biome check --write",
-		"format": "biome format --write"
+		"format": "biome format --write",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.2",
