@@ -1,3 +1,5 @@
+import { isErrorLike } from './is-error-like.js';
+
 /**
  * Extract an error message from the given value.
  *
@@ -21,11 +23,7 @@ export function extractErrorMessage(err: unknown): string | undefined {
 		return err;
 	}
 
-	if (
-		typeof err === 'object' &&
-		'message' in err &&
-		typeof err?.message === 'string'
-	) {
+	if (isErrorLike(err)) {
 		return err.message;
 	}
 
