@@ -1,5 +1,12 @@
 import { tryCatch } from '../async/index.js';
 
+export const defaultRequestInit: RequestInit = {
+	method: 'GET',
+	headers: {
+		'Content-Type': 'application/json',
+	},
+};
+
 /**
  * Fetch JSON data from a URL.
  *
@@ -8,12 +15,7 @@ import { tryCatch } from '../async/index.js';
  */
 export async function fetchJson<T = unknown>(
 	url: string,
-	options: RequestInit = {
-		method: 'GET',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-	},
+	options: RequestInit = defaultRequestInit,
 ): Promise<T | Error> {
 	const { error, data } = await tryCatch(fetch(url, { ...options }));
 

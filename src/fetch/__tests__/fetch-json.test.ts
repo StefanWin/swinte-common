@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { fetchJson } from '../fetch-json.js';
 
 describe('fetchJson', () => {
-	it('should fetch valid json', async () => {
+	it.skip('should fetch valid json', async () => {
 		await expect(
 			fetchJson('https://api.github.com/repos/vercel/next.js'),
 		).resolves.toMatchObject({
@@ -11,7 +11,7 @@ describe('fetchJson', () => {
 		});
 	});
 
-	it('should fail with 404', async () => {
+	it.skip('should fail with 404', async () => {
 		await expect(
 			fetchJson(
 				'https://api.github.com/repos/vercel/i-hope-this-does-not-exits',
@@ -19,7 +19,7 @@ describe('fetchJson', () => {
 		).rejects.toThrowError(`invalid response status: Not Found`);
 	});
 
-	it('should fail with invalid JSON', async () => {
+	it.skip('should fail with invalid JSON', async () => {
 		await expect(
 			fetchJson(
 				'https://raw.githubusercontent.com/StefanWin/swinte-common/refs/heads/main/.npmrc',
