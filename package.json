@@ -1,0 +1,48 @@
+{
+	"name": "@stefanwin/common",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"keywords": [
+		"typescript"
+	],
+	"license": "MIT",
+	"author": {
+		"url": "https://swinte.dev",
+		"email": "wintergerst.stefan@googlemail.com",
+		"name": "Stefan Wintergerst"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"main": "dist/index.umd.js",
+	"module": "dist/index.es.js",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/types/index.d.ts",
+			"import": "./dist/index.es.js",
+			"require": "./dist/index.umd.js"
+		}
+	},
+	"sideEffects": false,
+	"scripts": {
+		"build": "vite build && tsc --emitDeclarationOnly",
+		"test": "vitest",
+		"test:ci": "vitest run",
+		"test:lint": "biome ci",
+		"lint": "biome check --write",
+		"format": "biome format --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.2",
+		"@commitlint/cli": "^19.8.1",
+		"@commitlint/config-conventional": "^19.8.1",
+		"@types/node": "^22.18.0",
+		"husky": "^9.1.7",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.4",
+		"vitest": "^3.2.4"
+	},
+	"packageManager": "pnpm@10.14.0"
+}
