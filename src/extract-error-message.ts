@@ -17,14 +17,14 @@ export function extractErrorMessage(err: unknown): string | undefined {
 		return err.message;
 	}
 
-	if (typeof err === "string") {
+	if (typeof err === 'string') {
 		return err;
 	}
 
 	if (
-		typeof err === "object" &&
-		"message" in err &&
-		typeof err?.message === "string"
+		typeof err === 'object' &&
+		'message' in err &&
+		typeof err?.message === 'string'
 	) {
 		return err.message;
 	}
