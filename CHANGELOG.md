@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.6](https://github.com/StefanWin/swinte-common/compare/common-v0.1.5...common-v0.1.6) (2025-09-02)
+
+
+### Features
+
+* add LICENSE ([d252165](https://github.com/StefanWin/swinte-common/commit/d252165548b4c9a1af03570a78ed93916543ff7d))
+
+
+### Bug Fixes
+
+* only publish dist ([4a1ed46](https://github.com/StefanWin/swinte-common/commit/4a1ed46f3bdfcf757ca9b535c6d3567e6ac19519))
+
 ## [0.1.5](https://github.com/StefanWin/swinte-common/compare/common-v0.1.4...common-v0.1.5) (2025-09-02)
 
 
