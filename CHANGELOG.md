@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.7](https://github.com/StefanWin/swinte-common/compare/common-v0.1.6...common-v0.1.7) (2025-09-02)
+
+
+### Bug Fixes
+
+* package name in readme ([21d1162](https://github.com/StefanWin/swinte-common/commit/21d1162a3416aacc7fd851dcb935545719c88221))
+* package name in release please config ([b492027](https://github.com/StefanWin/swinte-common/commit/b492027cff9594930dbb0be365f37cead7d6b1a1))
+* type emits ([1f47d9d](https://github.com/StefanWin/swinte-common/commit/1f47d9d683f85ffe5a7f12f20412ed2b05fcb073))
+
 ## [0.1.6](https://github.com/StefanWin/swinte-common/compare/common-v0.1.5...common-v0.1.6) (2025-09-02)
 
 
