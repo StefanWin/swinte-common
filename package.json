@@ -11,6 +11,7 @@
 		"email": "wintergerst.stefan@googlemail.com",
 		"url": "https://swinte.dev"
 	},
+	"homepage": "https://github.com/StefanWin/swinte-common",
 	"sideEffects": false,
 	"type": "module",
 	"exports": {
@@ -20,6 +21,10 @@
 			"require": "./dist/index.umd.js"
 		}
 	},
+	"files": [
+		"dist/",
+		"README"
+	],
 	"main": "dist/index.umd.js",
 	"module": "dist/index.es.js",
 	"types": "dist/types/index.d.ts",
