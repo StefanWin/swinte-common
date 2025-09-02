@@ -1,4 +1,4 @@
-# `@stefanwin/common`
+# `@swinte/common`
 
 [![CI](https://github.com/StefanWin/swinte-common/actions/workflows/ci.yml/badge.svg)](https://github.com/StefanWin/swinte-common/actions/workflows/ci.yml)
 [![Release](https://github.com/StefanWin/swinte-common/actions/workflows/release.yml/badge.svg)](https://github.com/StefanWin/swinte-common/actions/workflows/release.yml)
