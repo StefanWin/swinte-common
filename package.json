@@ -23,7 +23,8 @@
 	},
 	"files": [
 		"dist/",
-		"README"
+		"README",
+		"LICENSE"
 	],
 	"main": "dist/index.umd.js",
 	"module": "dist/index.es.js",
