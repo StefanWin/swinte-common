@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/StefanWin/swinte-common/compare/common-v0.1.2...common-v0.1.3) (2025-09-02)
+
+
+### Features
+
+* publish on npm ([#10](https://github.com/StefanWin/swinte-common/issues/10)) ([c86eea5](https://github.com/StefanWin/swinte-common/commit/c86eea5d71f7bddef957001812c2df250383b9d5))
+
 ## [0.1.2](https://github.com/StefanWin/swinte-common/compare/common-v0.1.1...common-v0.1.2) (2025-09-01)
 
 
