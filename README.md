@@ -6,5 +6,4 @@
 A collection of utility functions.
 
 ### Install
-- `pnpm set @stefanwin:registry https://npm.pkg.github.com`
-- `pnpm add @stefanwin/common`
+- `pnpm add @swinte/common`
