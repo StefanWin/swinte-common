@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/StefanWin/swinte-common/compare/common-v0.1.4...common-v0.1.5) (2025-09-02)
+
+
+### Bug Fixes
+
+* npm registry auth during publish ([54fd07b](https://github.com/StefanWin/swinte-common/commit/54fd07b0ad2f6e5eb5d1a130281e62d2d6ddb60c))
+
 ## [0.1.4](https://github.com/StefanWin/swinte-common/compare/common-v0.1.3...common-v0.1.4) (2025-09-02)
 
 
