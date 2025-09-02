@@ -1,5 +1,5 @@
 {
-	"name": "@stefanwin/common",
+	"name": "@swinte/common",
 	"version": "0.1.2",
 	"description": "",
 	"keywords": [
@@ -48,6 +48,6 @@
 	},
 	"packageManager": "pnpm@10.14.0",
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
+		"access": "public"
 	}
 }
