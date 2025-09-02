@@ -2,7 +2,7 @@
 	"release-type": "node",
 	"packages": {
 		".": {
-			"package-name": "@stefanwin/common",
+			"package-name": "@swinte/common",
 			"bump-minor-pre-major": true,
 			"bump-patch-for-minor-pre-major": true
 		}
